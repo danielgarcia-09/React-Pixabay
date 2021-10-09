@@ -1,8 +1,13 @@
-
+import Form from "./components/Form";
 
 function App() {
   return (
-      <h1>klk</h1>
+      <div className="container">
+        <div className="jumbotron">
+          <p className="lead text-center">Buscador de imagenes</p>
+          <Form />
+        </div>
+      </div>
   );
 }
 
