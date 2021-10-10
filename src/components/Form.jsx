@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Error from './Error';
 
-const Form = ({searching,updateActualPage}) => {
+const Form = ({setSearch,updateActualPage}) => {
 
     const [ searchValue, updateSearchValue ] = useState('');
     
@@ -19,7 +19,7 @@ const Form = ({searching,updateActualPage}) => {
         updateError(false);
 
         //* send search value to app component
-        searching(searchValue);
+        setSearch(searchValue);
         //* setting actual page to 1
         updateActualPage(1);
     }
